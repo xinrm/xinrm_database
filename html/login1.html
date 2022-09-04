@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <title>LOGIN AS SUPERVISOR</title>
+  <link rel='stylesheet' href='https://fonts.googleapis.com/css?family=Rubik:400,700'>
+  <link rel="stylesheet" href="..//css/login1.css">
+
+</head>
+
+<body>
+  <!-- partial:index.partial.html -->
+  <div >
+      <h1 id="Login">Login As Supervisor</h1>
+
+        <div class="input field"></div>
+          <input id="username" type="text" placeholder="enter username" autocomplete="nope">
+        </div>
+        <div class="imgcontainer">
+          <img src="../images/xinrm.jpg" alt="Avatar" style="width:400px;height:128px;position:absolute;top:100px;right:540px">
+       </div>
+          <div class="input-field">
+            <input id="password" type="password" placeholder="Password" autocomplete="new-password">
+          </div>
+          <div class="action">
+            <button onclick="validate()" id="signin">Sign in</button>
+            <script>
+              function validate() {
+                let username = document.getElementById('username').value;
+                let password = document.getElementById('password').value;
+
+                if (username === "supervisor" && password === "XINRM@123") {
+                  alert('Login Suscussfully')
+                  localStorage.setItem("supervisor_id",1003)
+                  window.location.href="database.html";
+
+                }
+                else if(username=="supervisor1" && password=="XINRM@124"){
+                  alert('Login Suscussfully')
+                  localStorage.setItem("supervisor_id",1224)
+                  window.location.href="database.html";
+                } 
+                else if(username=="supervisor2" && password=="XINRM@176"){
+                  alert('Login Suscussfully')
+                  localStorage.setItem("supervisor_id",1557)
+                  window.location.href="database.html";
+                }
+                else if(username=="supervisor3" && password=="XINRM@900"){
+                  alert('Login Suscussfully')
+                  localStorage.setItem("supervisor_id",1007)
+                  window.location.href="database.html";
+                }
+                else if(username=="supervisor4" && password=="XINRM@888"){
+                  alert('Login Suscussfully')
+                  localStorage.setItem("supervisor_id",1045)
+                  window.location.href="database.html";
+                }
+                else{
+                alert("Login failed!!")}
+                //"index.html";
+
+              }
+            </script>
+        </div>
+  </div>
+  
+
+</body>
+
+</html>

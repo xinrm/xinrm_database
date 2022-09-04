@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SOCIAL CENTRE</title>
+    <link rel="stylesheet" href="/css/index1.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+
+<body>
+<div class="container">
+  <img src="images/img_avatar.png" alt="Avatar" class="image">
+  <div class="overlay">
+    <a href="#" class="icon" title="User Profile">
+      <i class="fa fa-user"></i>
+    </a>
+  </div>
+</div>
+    <div class="container">
+        <form action="" id="details">
+            <div class="alert">Your message sent</div>
+            <div class="imgcontainer">
+                <img src="images/xinrm.jpg" alt="Avatar" style="width:400px;height:128px;" >
+            </div>
+            <div>
+            <p id="test1">Please enter the details, The details will be sent to Supervisor. Please make sure your enter data in columns as per the given pattern.</p>
+            </div>
+            <div class="inputBox">
+                <label id="1" for="1"><b>Enter details for 1</b></label>
+                <input type="text" id="s0" placeholder="Enter details." />
+            </div>
+            <div class="inputBox">
+                <label id="2" for="2"><b>Enter details for 2</b></label>
+                <input type="text" id="s1" placeholder="Enter details." />
+            </div>
+            <div class="inputBox">
+                <label id="3" for="3"><b>Enter details for 3</b></label>
+                <input type="text" id="s2" placeholder="Enter details." />
+            </div>
+            <div class="inputBox">
+                <label id="4" for="4"><b>Enter details for 4</b></label>
+                <input type="text" id="s3" placeholder="Enter details." />
+            </div>
+            <div class="inputBox">
+                <label id="5" for="5"><b>Enter details for 5</b></label>
+                <input type="text" id="s4" placeholder="Enter details." />
+            </div>
+            <div class="inputBox">
+                <label id="6" for="6"><b>Enter details for 6</b></label>
+                <input type="text" id="s5" placeholder="Enter details." />
+            </div>
+            <div class="inputBox">
+                <label id="7" for="7"><b>Enter details for 7</b></label>
+                <input type="text" id="s6" placeholder="Enter details." />
+            </div>
+            <div class="inputBox">
+                <label id="8" for="8"><b>Enter details for 8</b></label>
+                <input type="text" id="s7" placeholder="Enter details." />
+            </div>
+            <div class="inputBox">
+                <label id="9" for="9"><b>Enter details for 9</b></label>
+                <input type="text" id="s8" placeholder="Enter details." />
+            </div>
+            <div class="inputBox">
+                <label id="10" for="10"><b>Enter details for 10</b></label>
+                <input type="text" id="s9" placeholder="Enter details." />
+            </div>
+            <div class="inputBox">
+                <label id="11" for="11"><b>Enter Supervisor code</b></label>
+                <input type="text" id="s11" placeholder="Enter details." />
+            </div>
+
+            <div class="inputBox">
+                <button id="Submit" type="Submit">Submit</button>
+            </div>
+
+            <script src="https://cdnjs.cloudflare.com/ajax/libs/firebase/7.14.1-0/firebase.js"></script>
+            <script src="js/index_1.js"></script>
+        </form>
+    </div>
+            <div>
+                <a href="html/login1.html">
+                <button onclick="myFunc()" id="Login" type="Login">Login as Supervisor</button>
+                </a>
+                <script>
+                    function myFunc() {
+                        window.location.href = "login1.html";
+                    }
+                </script>
+            </div>
+            <div>
+                <a href="html/login2.html">
+                <button onclick="myFunc()" id="Login" type="Login">Login as Project coordinator</button>
+                </a>
+                <script>
+                    function myFunc() {
+                        window.location.href = "login2.html";
+                    }
+                </script>
+            </div>
+
+
+</body>
+
+</html>

@@ -1,0 +1,26 @@
+tr:nth-child(even) {background-color: #f2f2f2;}
+td {
+    background-color:blue;
+    color: white;
+    text-align: center;
+    text-decoration-color: black;
+  }
+  table ,tr{
+    border: 5px solid;
+  }
+  * 
+{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    -webkit-font-smoothing: antialiased;
+    background-image:url("logo.png");
+    
+  }
+  button[id=Enter_details]{
+    position: absolute;
+    top: 100px;
+    right:270px;
+    color: wheat;
+    background-color:blueviolet;
+  }

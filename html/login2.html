@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <title>LOGIN AS PROJECT COORDINATOR</title>
+  <link rel='stylesheet' href='https://fonts.googleapis.com/css?family=Rubik:400,700'>
+  <link rel="stylesheet" href="..//css/login2.css">
+
+</head>
+
+<body>
+  <!-- partial:index.partial.html -->
+  <div >
+      <h1 id="Login">Login As Project Coordinator</h1>
+
+        <div class="input field"></div>
+          <input id="username" type="text" placeholder="enter username" autocomplete="nope">
+        </div>
+        <div class="imgcontainer">
+          <img src="..//images/xinrm.jpg" alt="Avatar" style="width:400px;height:128px;position:absolute;top:100px;right:540px">
+       </div>
+          <div class="input-field">
+            <input id="password" type="password" placeholder="Password" autocomplete="new-password">
+          </div>
+          <div class="action">
+            <button onclick="validate()" id="signin">Sign in</button>
+            <script>
+              function validate() {
+                let username = document.getElementById('username').value;
+                let password = document.getElementById('password').value;
+
+                if (username === "project_c" && password === "XINRM@1@2@3") {
+                  alert('Login Suscussfully')
+                  window.location.href="database1.html";
+
+                }
+
+                else{
+                alert("Login failed!!")}
+                //"index.html";
+
+              }
+            </script>
+        </div>
+  </div>
+  
+
+</body>
+
+</html>
